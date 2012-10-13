@@ -1,8 +1,38 @@
 Description:
-    Explain the generator
+    Yeoman generator based on @necolas' Jekyll Boilerplate.
+
+    This generator will simply fetch the latest state of jekyll-boilerplate's
+    master branch (unless the content is already cached by yeoman at
+    `~/.yeoman/cache/necolas/jekyll-boilerplate)` in the `location` argument
+    provided.
+
+Arguments:
+
+    - location: Defaults to current working directory. Base directory to copy
+                the content of the remote template.
+
+Tasks:
+
+    This generator will also generate:
+
+      - a basic Gruntfile if none were found
+      - a tasks/ directory with:
+        - server: Override the built-in server command to run Jekyll instead.
 
 Example:
-    yeoman init jekyll-boilerplate Thing
+
+    yeoman init jekyll
 
     This will create:
-        what/will/it/create
+        .
+        |-- .gitignore
+        |-- README
+        |-- _config.yml
+        |-- _layouts
+        |   |-- default.html
+        |   |-- post.html
+        |-- _includes
+        |-- _posts
+        |   |-- 1970-01-01-placeholder-post.md
+        |-- index.html
+
