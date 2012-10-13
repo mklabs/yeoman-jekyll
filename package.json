@@ -1,14 +1,15 @@
 {
-  "author": "",
-  "name": "mklabs.github.com",
-  "description": "Jekyll site",
-  "version": "0.0.0",
+  "author": "mklabs",
+  "name": "yeoman-jekyll",
+  "description": "Yeoman generators and Grunt tasks to work with Jekyll sites",
+  "version": "0.0.1",
   "repository": {
     "type": "git",
     "url": "git://github.com/mklabs/mklabs.github.com.git"
   },
   "dependencies": {
-    "yeoman-generators": "http://nodeload.github.com/yeoman/generators/tarball/master"
+    "yeoman-generators": "http://nodeload.github.com/yeoman/generators/tarball/master",
+    "cheerio": "~0.10.1"
   },
   "devDependencies": {},
   "optionalDependencies": {},
