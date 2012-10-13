@@ -1,0 +1,8 @@
+Description:
+    Explain the generator
+
+Example:
+    yeoman init gruntfile/jekyll Thing
+
+    This will create:
+        what/will/it/create
