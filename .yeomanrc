@@ -1,0 +1,12 @@
+{
+  "themes": [
+    "orderedlist/modernist",
+    "orderedlist/minimal",
+    "mattgraham/Midnight",
+    "jsncostello/slate",
+    "mattgraham/Leap-Day",
+    "jonrohan/time-machine-theme",
+    "cameronmcefee/merlot",
+    "broccolini/dinky"
+  ]
+}

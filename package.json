@@ -1,0 +1,18 @@
+{
+  "author": "",
+  "name": "mklabs.github.com",
+  "description": "Jekyll site",
+  "version": "0.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mklabs/mklabs.github.com.git"
+  },
+  "dependencies": {
+    "yeoman-generators": "http://nodeload.github.com/yeoman/generators/tarball/master"
+  },
+  "devDependencies": {},
+  "optionalDependencies": {},
+  "engines": {
+    "node": "*"
+  }
+}
