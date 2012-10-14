@@ -1,0 +1,17 @@
+Description:
+    Jekyll post generator. Give it a title name, and an optional list of
+    categories.
+
+Example:
+    yeoman init jekyll:post Post title
+
+    This will create:
+        _posts/2012-10-14-post-title.md
+
+    yeoman init jekyll:post "About me" --category blog --category bio
+
+    This will create:
+        _posts/2012-10-14-about-me.md (but with `categories: [blog, bio]` in the YAML front matter)
+
+    yeoman init jekyll:post Stuff
+
