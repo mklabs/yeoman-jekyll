@@ -1,0 +1,8 @@
+The "scripts" directory is resolved relative to the "app" one.
+
+This is where the JavaScript files of your application are located.
+
+This path is used namely with the lint, coffee, and rjs task (every task that
+is looking up for JS sources)
+
+Defaults to `scripts/`.

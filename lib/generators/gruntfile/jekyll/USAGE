@@ -1,8 +1,22 @@
 Description:
-    Explain the generator
+    This generator is here to help with the setup of grunt / yeoman
+    configuration on Jekyll based websites.
+
+    It'll scan the current working directory for key-directories and known file
+    patterns. You'll then be asked for confirmation on each of these directory,
+    with sensitive defaults, or suggestion based on the current file structure.
+
+    ex. A lookup is performed on the current working directory for CSS (and
+    scss/sass files). Each result is then reduced into a list of unique
+    directory paths. If the scanned directories consists in a single result,
+    then the system suggest to use that path as "styles" value.
+
+    The result is then persisted as a local `.yeomanrc` JSON file, along the
+    generation of a Yeoman Gruntfile.
 
 Example:
-    yeoman init gruntfile/jekyll Thing
+    yeoman init gruntfile:jekyll
 
     This will create:
-        what/will/it/create
+        Gruntfile.js
+        .yeomanrc

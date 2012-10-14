@@ -1,0 +1,14 @@
+The "temp" directory is used mostly with the build and server commands.
+
+It acts as a mirror of your "app" directory, compile-ish steps like coffee,
+compass or even rjs should be configured to output in this directory.
+
+The server task when creating the HTTP server will use both directories to
+serve static files, from both locations. Order matters, and the "app" directory
+is usually configured prior to the "temp" one, meaning that the server will
+respond with the file in "app" when the same file appears in both direcory.
+
+Additionnaly, this directory is used by the build task, to copy the files in
+the "app" dir and optimize files in that temporary directory.
+
+Defaults to `temp/`.

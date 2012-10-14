@@ -1,0 +1,8 @@
+The "styles" directory is resolved relative to the "app" one.
+
+This is where the raw CSS of pre-processor files of your application are
+located.
+
+Namely used with the compass.
+
+Defaults to `styles/`.

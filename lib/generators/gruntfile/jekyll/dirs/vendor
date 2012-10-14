@@ -1,0 +1,10 @@
+The "vendor" directory is resolved relative to the "app" one.
+
+This is where the third-party JavaScript files of your application are located.
+
+Usually called scripts/vendor/ (defaults) or js/libs
+
+You should map the value of "scripts" directory with the value of "vendor", ex.
+scripts/ and scripts/vendor or js/ and js/libs.
+
+Defaults to `scripts/vendor`.
