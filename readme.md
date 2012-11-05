@@ -6,7 +6,7 @@ Install
 
 Grab dev dependencies (yeoman generators & grunt tasks). In the Jekyll website root.
 
-    npm install http://nodeload.github.com/mklabs/yeoman-jekyll/tarball/master
+    npm install http://github.com/mklabs/yeoman-jekyll/tarball/master
 
 Install Jekyll locally
 
