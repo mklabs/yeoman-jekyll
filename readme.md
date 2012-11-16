@@ -15,7 +15,7 @@ Install Jekyll locally
 Commands
 --------
 
-To enable below commans, project gruntfile should load the plugin tasks:
+To enable below commands, project gruntfile should load the plugin tasks:
 
 ```js
 grunt.loadNpmTasks('yeoman-jekyll');
