@@ -1,0 +1,7 @@
+auto: true
+server: true
+markdown: rdiscount
+
+baseurl: /
+
+exclude: Gemfile, Gemfile.lock, Gruntfile.js, grunt.js, package.json, readme.md

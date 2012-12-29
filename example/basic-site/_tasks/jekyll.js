@@ -18,7 +18,25 @@ module.exports = function(grunt) {
   function task(options) {
     options = options || {};
     return function() {
+      grunt.log.writeln('...' + this.name + '...');
 
+      options = _.defaults(grunt.config(this.name) || {}, options, {
+        command: 'bundle exec jekyll'
+      });
+
+      var args = Array.isArray(options.command) ? options.command : options.command.split(' ');
+      var cmd = args.shift();
+
+      grunt.log.writeln('... Executing ' + cmd + ' ' + args.join(' ') + '...');
+      var done = this.async();
+      spawn(cmd, args, options).on('exit', function(code) {
+        if(code) {
+          grunt.log.error('Error executing ' + cmd + ' (code: ' + code + ')');
+          return done(false);
+        }
+
+        return done();
+      });
     };
   }
 

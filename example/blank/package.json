@@ -1,0 +1,8 @@
+{
+  "name": "basic-site",
+  "description": "Simple example of a Jekyll website",
+  "version": "0.0.1",
+  "dependencies": {
+    "yeoman-jekyll": "https://github.com/mklabs/yeoman-jekyll/archive/master.tar.gz"
+  }
+}
