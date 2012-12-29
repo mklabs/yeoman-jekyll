@@ -6,21 +6,26 @@ Install
 
 Grab dev dependencies (yeoman generators & grunt tasks). In the Jekyll website root.
 
-    npm install http://github.com/mklabs/yeoman-jekyll/tarball/master
+    # init a new repo
+    mkdir -p ~/sites/blogthing
+    cd ~/sites/blogthing
+    npm init
 
-Install Jekyll locally
-
-```rb
-# in your Gemfile
-
-gem "jekyll"
-gem "rdiscount"
-```
-
-Grab dev dependencies (yeoman generators & grunt tasks). In the Jekyll website root.
-
-    # add it to your project dependency
+    # install the package. Add it to your package.json dependencies
     npm install https://github.com/mklabs/yeoman-jekyll/archive/master.tar.gz --save
+
+    # Run the generator and create the initial file structure
+    yeoman init jekyll
+
+    # anwser a few prompts
+
+    # Install Jekyll locally (get [bundler](http://gembundler.com/))
+    bundle install
+
+    # start jekyll server
+    grunt --config Gruntfile.js jekyll
+
+    # or yeoman jekyll
 
 Tasks
 -----
