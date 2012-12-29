@@ -8,14 +8,9 @@
     "url": "git://github.com/mklabs/mklabs.github.com.git"
   },
   "dependencies": {
-    "yeoman-generators": "http://github.com/yeoman/generators/tarball/master",
+    "yeoman-generators": "http://github.com/yeoman/generators/archive/0.9.5.tar.gz",
     "cheerio": "~0.10.1",
     "request": "~2.11.4",
     "underscore": "~1.4.2"
-  },
-  "devDependencies": {},
-  "optionalDependencies": {},
-  "engines": {
-    "node": "*"
   }
 }

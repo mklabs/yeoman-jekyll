@@ -10,40 +10,32 @@ Grab dev dependencies (yeoman generators & grunt tasks). In the Jekyll website r
 
 Install Jekyll locally
 
-    gem install jekyll rdiscount
+```rb
+# in your Gemfile
 
-Commands
---------
-
-To enable below commands, project gruntfile should load the plugin tasks:
-
-```js
-grunt.loadNpmTasks('yeoman-jekyll');
+gem "jekyll"
+gem "rdiscount"
 ```
 
-**Run the build script**
+Grab dev dependencies (yeoman generators & grunt tasks). In the Jekyll website root.
 
-    yeoman build
+    # add it to your project dependency
+    npm install https://github.com/mklabs/yeoman-jekyll/archive/master.tar.gz --save
 
-This will compile the Jekyll website in the intermediate directory `_temp/`, go
-through yeoman build script, and finally copy the result over `_site/`
+Tasks
+-----
 
+The generator should create a basic `Gruntfile.js` with a `_tasks` directory
+including few `jekyll-*` tasks to serve or compile the website.
 
-**preview server**
+    jekyll          Compile jekyll with default config (in _config.yml)
+    jekyll-compile  Runs jekyll in no-server mode, compiling to _site
+    jekyll-help     Outputs Jekyll help output
 
-    yeoman server
+**todo**
 
-This will run Jekyll with the default configuration setup in `_config.yml`.
-Both `auto` and `server` options should be turned on. Jekyll will watch for
-modifications and rebuilt automatically in `_site`.
-
-Yeoman / Grunt are configured to watch any files with `_site` directory, and
-will start a LiveReload compatible server on port `35729`.
-
-Install the LiveReload extensions, visit `http://localhost:4000` (default
-hostname / port, you change it in the `_config.yml`), click the
-LR icon, connection should establish and you can then enjoy the live reloading
-of your Jekyll website.
+    jekyll-reload   Watch _site for file changes and send a LiveReload notification
+    jekyll-build    Compiles assets and update layouts
 
 Generators
 ----------
