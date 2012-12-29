@@ -7,4 +7,4 @@ Usually called scripts/vendor/ (defaults) or js/libs
 You should map the value of "scripts" directory with the value of "vendor", ex.
 scripts/ and scripts/vendor or js/ and js/libs.
 
-Defaults to `scripts/vendor`.
+Defaults to `./vendor`.

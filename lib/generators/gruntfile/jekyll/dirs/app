@@ -7,4 +7,4 @@ A good place for that is simply `app/` (default value), but if you want the
 root of your repository to be the root of your application, you can choose to
 set this to `./`
 
-Defaults to `app/`.
+Defaults to `./`.

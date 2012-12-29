@@ -1,4 +1,4 @@
 The "dist" directory is only used at the end of the build task, simply copying
 the "temp" directory to the "dist" one.
 
-Defaults to `dist/`.
+Defaults to `_site/`.
